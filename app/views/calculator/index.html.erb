@@ -1,1 +1,37 @@
 <h1>Welcome to my calculator!</h1>
+
+  <div class = "calculator col-6 offset-3">
+    <p><font size = "5">Calculator</font></p>
+    <div class = "input">Frame size <input type = "number" id = "Fsize">
+    </div>
+    <br>
+    <div class = "input">DBL <input type = "number" id = "Bsize">
+    </div>
+    <br>
+    <div class = "input">Sphere power <input type = "number" id = "Spower">
+    </div>
+    <br>
+    <div class = "input">Cylinder power <input type = "number" id = "Cpower" value = "0">
+    </div>
+    <br>
+    <div class = "input">Axis <input type = "number" id = "Axis" value = "0">
+    </div>
+    <br>
+    <div class = "input">Lens material 
+      <select id = "material">
+        <option value = "1.50">Plastic</option>
+        <option value = "1.53">1.53 Trivex</option>
+        <option value = "1.56">1.56 Mid-index</option>
+        <option value = "1.60">1.60 Hi-index</option>
+        <option value = "1.67">1.67 Hi-index</option>
+        <option value = "1.70">1.70 Hi-index</option>
+        <option value = "1.74">1.74 Hi-index</option>
+      </select>
+    </div>
+    <br>
+    <div class = "input">Pupillary distance <input type = "number" id = "PD">
+    </div>
+    <br>
+    <button onclick = "getLensThickness()">Calculate</button>
+    <p id = "output">Estimated Lens Thickness <input type = "text" name = "result" id = "result" readonly = "true"/></p>
+  </div>
