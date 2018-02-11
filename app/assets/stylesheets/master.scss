@@ -1,14 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Eczar|Gentium+Basic');
 @import "bootstrap";
+
 
 .navbar-nav {
     display:table;
     width:100%;
     margin: 0;
+    font-family: 'Eczar', serif;
 }
 .navbar-nav > li {
     float:none;
     display:table-cell;
     text-align:center;
+    font-family: 'Eczar', serif;
+}
+.nav-item {
+  font-family: 'Eczar', serif;
 }
 .calculator {
 width:auto;
@@ -18,14 +25,37 @@ height:auto;
 border-radius: 20px;
 border:11px solid #FFA280;
 background-color:#FFFFFF;
--webkit-box-shadow: #B3B3B3 26px 26px 26px;
--moz-box-shadow: #B3B3B3 26px 26px 26px; 
-box-shadow: #B3B3B3 26px 26px 26px;
+-webkit-box-shadow: #B3B3B3 10px 10px 10px;
+-moz-box-shadow: #B3B3B3 10px 10px 10px; 
+box-shadow: #B3B3B3 10px 10px 10px;
 margin-top: 10px;
 margin-bottom: 15px;
 padding: 20px;
 }
-.input{
-
+.input {
+  font-family: 'Gentium Basic', serif;
+}
+#output {
+  font-family: 'Gentium Basic', serif;
+}
+body {
+  background: image_url('eyeglass-background.jpg');
+}
+.header {
+  width:auto;
+  height:auto;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  border:11px solid #FFA280;
+  background-color:#FFFFFF;
+  -webkit-box-shadow: #B3B3B3 10px 10px 10px;
+  -moz-box-shadow: #B3B3B3 10px 10px 10px; 
+  box-shadow: #B3B3B3 10px 10px 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Eczar', serif;
 }
 
