@@ -1,1 +1,9 @@
-<h1>List questions here</h1>
+<br />
+<div class="mybox col-10 offset-1">
+  <h1 class="text-center">Questions</h1>
+  <hr />
+
+  <% @questions.each do |question| %>
+    <h2 class="text-center"><%= question.question %></h2>
+  <% end %>
+</div>

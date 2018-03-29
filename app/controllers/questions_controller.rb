@@ -1,6 +1,7 @@
 class QuestionsController < ApplicationController
 
   def index
+    @questions = Question.all
   end
 
   def new
@@ -8,13 +9,13 @@ class QuestionsController < ApplicationController
   end
 
   def create
-    @question = Question.create#(question_params)
+    @question = Question.create(question_params)
     redirect_to questions_path
   end
 
   private
 
-  # def question_params
-  #   params.require(:question, :name)
-  # end
+  def question_params
+    params.require(:question).permit(:question, :name)
+  end
 end
